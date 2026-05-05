@@ -6,23 +6,22 @@
   <title>Wishlist Finder</title>
   <link rel="stylesheet" href="/wishlist-collection-eleventy/styles/wishlistStyle.css" />
 </head>
+
 <body>
   <div class="app">
-    <!-- Sidebar (dropdown navigation) -->
-    <div class="sidebar" >
+    <!-- Sidebar -->
+    <div class="sidebar">
       <div class="dots">
-         <span class="dot red"></span>
+        <span class="dot red"></span>
         <span class="dot yellow"></span>
         <span class="dot green"></span>
       </div>
-      
+
       <nav class="nav">
         <div class="section-label">Favorites</div>
 
         <!-- Home -->
-        <a class="item" href="index.html">
-          <!-- Look-alike Home icon -->
-           <!-- ChatGPT reference -->
+        <a class="item" href="/wishlist-collection-eleventy/">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M3 11l9-8 9 8"></path>
@@ -32,8 +31,7 @@
         </a>
 
         <!-- Wishlist -->
-        <a class="item"  id="itemCurrent" >
-          <!-- Look-alike Heart icon -->
+        <a class="item" id="itemCurrent" href="/wishlist-collection-eleventy/wishlist.html" aria-current="page">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M20.8 6.6a5.5 5.5 0 0 0-7.8 0L12 7.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 22l7.8-6.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
@@ -42,161 +40,148 @@
         </a>
 
         <!-- Galleries -->
-        <a class="item" href="galleries.html">
-          <!-- Look-alike galleries icon -->
-         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <!-- frame (bigger) -->
-            <path d="M3 5h18v14H3z"/>
-            <!-- sun (slightly larger) -->
-            <circle cx="10" cy="10" r="2"/>
-            <!-- mountains (scaled up) -->
-            <path d="M3 17l5-5 3 3 2-2 6 6"/>
+        <a class="item" href="/wishlist-collection-eleventy/galleries.html">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 5h18v14H3z"></path>
+            <circle cx="10" cy="10" r="2"></circle>
+            <path d="M3 17l5-5 3 3 2-2 6 6"></path>
           </svg>
           <span>Galleries</span>
         </a>
       </nav>
 
-       <!-- Navigation sidebar for more visible access of wishlist -->
-      <div class="section-label">Folders
-      <div class="sidebarFolders" >
+      <!-- Folder navigation -->
+      <div class="section-label">Folders</div>
+
+      <div class="sidebarFolders">
         
           
         
           
-          <a class="item" href="/wishlist-collection-eleventy/aurora.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Aurora</span>
-          </a>
+            <a class="item" href="/wishlist-collection-eleventy/aurora.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Aurora</span>
+            </a>
           
         
           
-          <a class="item" href="/wishlist-collection-eleventy/canada.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Canada</span>
-          </a>
+            <a class="item" href="/wishlist-collection-eleventy/canada.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Canada</span>
+            </a>
           
         
           
-          <a class="item" href="/wishlist-collection-eleventy/master.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Master Degree</span>
-          </a>
+            <a class="item" href="/wishlist-collection-eleventy/master.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Master Degree</span>
+            </a>
           
         
           
-          <a class="item" href="/wishlist-collection-eleventy/nagoya.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Nagoya, Japan</span>
-          </a>
+            <a class="item" href="/wishlist-collection-eleventy/nagoya.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Nagoya, Japan</span>
+            </a>
           
         
           
-          <a class="item" href="/wishlist-collection-eleventy/nintendo.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Nintendo Switch</span>
-          </a>
+            <a class="item" href="/wishlist-collection-eleventy/nintendo.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Nintendo Switch</span>
+            </a>
           
         
           
-          <a class="item" href="/wishlist-collection-eleventy/papua.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Volunteer in Papua</span>
-          </a>
+            <a class="item" href="/wishlist-collection-eleventy/papua.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Volunteer in Papua</span>
+            </a>
           
         
           
-          <a class="item" href="/wishlist-collection-eleventy/snowboard.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Snowboard/ski</span>
-          </a>
+            <a class="item" href="/wishlist-collection-eleventy/snowboard.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Snowboard/ski</span>
+            </a>
           
         
-      
-      
-        </div>
       </div>
     </div>
 
     <!-- Content -->
-    <!-- TopBar -->
     <main class="content">
+      <!-- Filtering wishlist with priority categories -->
+      
 
-        <!-- Filtering wishlist with priority categories -->
+      
         
+      
 
-        
-          
-        
-
-
-
-
-      <div class="topBar" >
+      <div class="topBar">
         <span>Locations</span>
         <span>›</span>
-        <b>Home</b>
+        <b>Wishlist</b>
+
         <div class="filtercontainer">
           <div class="filterbox">
-            <div id="priority" > Priority  </div>
+            <div id="priority">Priority</div>
             <span>›</span>
-              <a class="filteritem"
-                  href="wishlist.html">All</a>
-             <a class="filteritem"
-                href="priority-high.html">High</a>
 
-              <a class="filteritem"
-                href="priority-medium.html">Medium</a>
+            <a class="filteritem"
+               href="/wishlist-collection-eleventy/wishlist.html">All</a>
 
-              <a class="filteritem is-active"
-                href="priority-low.html">Low</a>
+            <a class="filteritem"
+               href="/wishlist-collection-eleventy/priority-high.html">High</a>
 
+            <a class="filteritem"
+               href="/wishlist-collection-eleventy/priority-medium.html">Medium</a>
+
+            <a class="filteritem is-active"
+               href="/wishlist-collection-eleventy/priority-low.html">Low</a>
           </div>
         </div>
       </div>
-     
-       
-       <!-- Displaying folder of wishlist based on filter -->
+
+      <!-- Display wishlist folders based on filter -->
       <section class="folderGrid">
         
           
-            <a class="wishlistFolder" href="/aurora.html">
-              <img src="/wishlist-collection-eleventy/images/bluefolder.png" alt="Folder icon">
-              <span class="title">Aurora</span>
-            </a>
+            
+              <a class="wishlistFolder" href="/wishlist-collection-eleventy/aurora.html">
+                <img src="/wishlist-collection-eleventy/images/bluefolder.png" alt="Folder icon">
+                <span class="title">Aurora</span>
+              </a>
+            
           
-            <a class="wishlistFolder" href="/nintendo.html">
-              <img src="/wishlist-collection-eleventy/images/bluefolder.png" alt="Folder icon">
-              <span class="title">Nintendo Switch</span>
-            </a>
+            
+              <a class="wishlistFolder" href="/wishlist-collection-eleventy/nintendo.html">
+                <img src="/wishlist-collection-eleventy/images/bluefolder.png" alt="Folder icon">
+                <span class="title">Nintendo Switch</span>
+              </a>
+            
           
         
       </section>

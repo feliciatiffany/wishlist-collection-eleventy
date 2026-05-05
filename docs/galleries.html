@@ -6,20 +6,22 @@
   <title>Galleries</title>
   <link rel="stylesheet" href="/wishlist-collection-eleventy/styles/galleries.css" />
 </head>
+
 <body>
   <div class="app">
     <!-- Sidebar -->
-    <div class="sidebar" >
+    <div class="sidebar">
       <div class="dots">
-         <span class="dot red"></span>
+        <span class="dot red"></span>
         <span class="dot yellow"></span>
         <span class="dot green"></span>
       </div>
-      <div class="section-label">Favorites</div>
-      <nav class="nav" >
+
+      <nav class="nav">
+        <div class="section-label">Favorites</div>
+
         <!-- Home -->
-        <a class="item" href=" index.html" >
-          <!-- Look-alike Home icon -->
+        <a class="item" href="/wishlist-collection-eleventy/">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M3 11l9-8 9 8"></path>
@@ -27,9 +29,9 @@
           </svg>
           <span>Home</span>
         </a>
+
         <!-- Wishlist -->
-        <a class="item"   href=" wishlist.html" >
-          <!-- Look-alike Heart icon -->
+        <a class="item" href="/wishlist-collection-eleventy/wishlist.html">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M20.8 6.6a5.5 5.5 0 0 0-7.8 0L12 7.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 22l7.8-6.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
@@ -38,287 +40,276 @@
         </a>
 
         <!-- Galleries -->
-        <a class="item" id="itemCurrent" >
-          <!-- Look-alike galleries icon -->
-         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <!-- frame (bigger) -->
-            <path d="M3 5h18v14H3z"/>
-            <!-- sun (slightly larger) -->
-            <circle cx="10" cy="10" r="2"/>
-            <!-- mountains (scaled up) -->
-            <path d="M3 17l5-5 3 3 2-2 6 6"/>
+        <a class="item" id="itemCurrent" href="/wishlist-collection-eleventy/galleries.html" aria-current="page">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 5h18v14H3z"></path>
+            <circle cx="10" cy="10" r="2"></circle>
+            <path d="M3 17l5-5 3 3 2-2 6 6"></path>
           </svg>
-
-
           <span>Galleries</span>
         </a>
       </nav>
 
-    <!-- Navigation sidebar for more visible access of wishlist -->
-      <div class="section-label">Folders
-      <div class="sidebarFolders" >
+      <!-- Folder navigation -->
+      <div class="section-label">Folders</div>
+
+      <div class="sidebarFolders">
         
-          <a class="item" href=" " role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span></span>
-          </a>
+          
         
-          <a class="item" href=" aurora.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Aurora</span>
-          </a>
+          
+            <a class="item" href="/wishlist-collection-eleventy/aurora.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Aurora</span>
+            </a>
+          
         
-          <a class="item" href=" canada.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Canada</span>
-          </a>
+          
+            <a class="item" href="/wishlist-collection-eleventy/canada.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Canada</span>
+            </a>
+          
         
-          <a class="item" href=" master.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Master Degree</span>
-          </a>
+          
+            <a class="item" href="/wishlist-collection-eleventy/master.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Master Degree</span>
+            </a>
+          
         
-          <a class="item" href=" nagoya.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Nagoya, Japan</span>
-          </a>
+          
+            <a class="item" href="/wishlist-collection-eleventy/nagoya.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Nagoya, Japan</span>
+            </a>
+          
         
-          <a class="item" href=" nintendo.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Nintendo Switch</span>
-          </a>
+          
+            <a class="item" href="/wishlist-collection-eleventy/nintendo.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Nintendo Switch</span>
+            </a>
+          
         
-          <a class="item" href=" papua.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Volunteer in Papua</span>
-          </a>
+          
+            <a class="item" href="/wishlist-collection-eleventy/papua.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Volunteer in Papua</span>
+            </a>
+          
         
-          <a class="item" href=" snowboard.html" role="listitem">
-            <!-- Look-alike Folder icon -->
-            <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
-            </svg>
-            <span>Snowboard/ski</span>
-          </a>
+          
+            <a class="item" href="/wishlist-collection-eleventy/snowboard.html" role="listitem">
+              <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h6l2 3h10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+              </svg>
+              <span>Snowboard/ski</span>
+            </a>
+          
         
-      
-      
-        </div>
       </div>
     </div>
 
-    <!-- IMAGES GALLERIES : All pictures that is used in wishlist Collection page -->
-    
+    <!-- Image galleries -->
     <main class="content">
-    
-      <div class="topBar" >
+      <div class="topBar">
         <div class="topBarItem">
           <span>Locations</span>
-          <span> › </span>
-          <b>Home</b>
+          <span>›</span>
+          <b>Galleries</b>
         </div>
       </div>
-    <div class="image-grid-wrapper">
-    <!-- First grid -->
-    <div class="image-grid">
-      
-        
-      
-        
-          <img src="/images/cambridge.png" alt="University of Cambridge" >
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/canada.JPG" alt="Scenery in Canada" >
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/nintendo.JPG" alt="Nintendo Cute" >
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/papua2.JPG" alt="Papua Volunteering" >
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/columbia.JPG" alt="Columbia University campus" >
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/toronto.JPG" alt="Toronto" >
-        
-      
-        
-      
-        
-      
-    </div>
 
-    <!-- Second grid -->
-    <div class="image-grid">
-      
-        
-          <img src="/images/aurora.JPG" alt="Aurora borealis" loading="lazy">
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/mit.png" alt="Massachusetts Institute of Technology" loading="lazy">
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/nagoya2.JPG" alt="Nagoya city night view" loading="lazy">
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/papua.JPG" alt="Papua landscape" loading="lazy">
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/snowboard.JPG" alt="Snowboarder" loading="lazy">
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/snowboard2.JPG" alt="Snowboard pic" loading="lazy">
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/vancouver.JPG" alt="Vancouver " loading="lazy">
-        
-      
-    </div>
+      <div class="image-grid-wrapper">
+        <!-- First grid -->
+        <div class="image-grid">
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/cambridge.png" alt="University of Cambridge" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/canada.JPG" alt="Scenery in Canada" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/nintendo.JPG" alt="Nintendo Cute" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/papua2.JPG" alt="Papua Volunteering" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/columbia.JPG" alt="Columbia University campus" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/toronto.JPG" alt="Toronto" loading="lazy">
+            
+          
+            
+          
+            
+          
+        </div>
 
-    <!-- Last grid -->
-    <div class="image-grid">
-      
-        
-      
-        
-      
-        
-          <img src="/images/harvard.png" alt="Harvard University" loading="lazy">
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/nagoya.JPG" alt="Nagoya city view" loading="lazy">
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/nintendo2.JPG" alt="Nintendo console" loading="lazy">
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/oxford.png" alt="University of Oxford" loading="lazy">
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/aurora2.JPG" alt="Aurora borealis" loading="lazy">
-        
-      
-        
-      
-        
-      
-        
-          <img src="/images/ucla.png" alt="UCLA campus" loading="lazy">
-        
-      
-        
-      
-    </div>
-  </div>
+        <!-- Second grid -->
+        <div class="image-grid">
+          
+            
+              <img src="/wishlist-collection-eleventy/images/aurora.JPG" alt="Aurora borealis" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/mit.png" alt="Massachusetts Institute of Technology" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/nagoya2.JPG" alt="Nagoya city night view" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/papua.JPG" alt="Papua landscape" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/snowboard.JPG" alt="Snowboarder" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/snowboard2.JPG" alt="Snowboard pic" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/vancouver.JPG" alt="Vancouver " loading="lazy">
+            
+          
+        </div>
 
+        <!-- Third grid -->
+        <div class="image-grid">
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/harvard.png" alt="Harvard University" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/nagoya.JPG" alt="Nagoya city view" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/nintendo2.JPG" alt="Nintendo console" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/oxford.png" alt="University of Oxford" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/aurora2.JPG" alt="Aurora borealis" loading="lazy">
+            
+          
+            
+          
+            
+          
+            
+              <img src="/wishlist-collection-eleventy/images/ucla.png" alt="UCLA campus" loading="lazy">
+            
+          
+            
+          
+        </div>
+      </div>
     </main>
   </div>
-
 </body>
 </html>
