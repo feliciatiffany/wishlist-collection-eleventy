@@ -3,35 +3,50 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>WishList</title>
+  <title>{{ title or "Wishlist" }}</title>
   <link rel="stylesheet" href="{{ '/styles/collectionStyle.css' | url }}" />
 </head>
+
 <body>
   <div class="wishBody">
-     <!-- Top Bar (navigation to home or wishlist list)-->
-    <div class="topBar" >
-        <div class="topBar-group">
-            <a class="topBar-list" href="{{ home }}">Home</a>
-            <a class="topBar-list" href="{{ wishlist }}" >Wishlist</a>
-        </div>
+    <!-- Top Bar -->
+    <div class="topBar">
+      <div class="topBar-group">
+        <a class="topBar-list" href="{{ '/' | url }}">Home</a>
+        <a class="topBar-list" href="{{ '/wishlist.html' | url }}">Wishlist</a>
+      </div>
     </div>
 
-   <!-- Content (Randomize placing of wishlist items) -->
-   <main class="content">
-    <section class="floatStage" >
-        {% for wishImage in img%}
-          <div class="floatItem"> 
-           <img src="{{ ('/images/' ~ wishImage) | url }}">
+    <!-- Content -->
+    <main class="content">
+      <section class="floatStage">
+        {% for wishImage in img %}
+          <div class="floatItem">
+            <img src="{{ ('/images/' + wishImage) | url }}" alt="{{ title or 'Wishlist image' }}">
           </div>
         {% endfor %}
-        <div class="floatItem" id="title"> {{ title }} </div>
-        <div class="floatItem" id="description"> {{ description }} </div>
-        <a class="floatItem" id="linkButton" href="{{ link }}"> Learn More </a>
-        <div class="floatItem" id="content"> {{ content | safe }} </div>
-    </section>
-    </main>
 
+        <div class="floatItem" id="title">
+          {{ title }}
+        </div>
+
+        <div class="floatItem" id="description">
+          {{ description }}
+        </div>
+
+        {% if link %}
+          <a class="floatItem" id="linkButton" href="{{ link }}" target="_blank" rel="noopener noreferrer">
+            Learn More
+          </a>
+        {% endif %}
+
+        <div class="floatItem" id="content">
+          {{ content | safe }}
+        </div>
+      </section>
+    </main>
   </div>
+
+  <script src="{{ '/scripts/randomizer.js' | url }}" defer></script>
 </body>
-<script src="{{ '/scripts/randomizer.js' | url }}" defer></script>
 </html>
