@@ -1,0 +1,109 @@
+<h1>📁 Collection Wishlist</h1>
+<blockquote>
+<p>A digital wishlist and memory collection website inspired by GUI file organization — where wishes are stored like folders and memories float as scattered thoughts.</p>
+</blockquote>
+<h2>🌟 Highlights</h2>
+<ul>
+<li>GUI-inspired design mimicking file folders and finder/file explorer</li>
+<li>Wishlist organization with priority filters (high, medium, low)</li>
+<li>Gallery view with image grid layout</li>
+<li>Fluid, scattered memory visualization — like how the brain organizes but stays imaginative</li>
+<li>Built with Eleventy (11ty) static site generator</li>
+<li>Filter system to categorize wishes by priority</li>
+</ul>
+<h2>📖 Overview</h2>
+<p>I was inspired by the design and history of GUI, which documentary videos always portray with collections of files in the shape of folders. Over the past, the development of file organizing in GUI has moved to a simpler look that we usually find in Finder/File Explorer or other applications in different operating systems.</p>
+<p>On the other hand, I recently accomplished some of my wishlist in the last couple of months. I believe going to college in New York helped me in achieving those wishlist. Especially I'm a collector of memories and experiences as I'm a curious person. My expense usually goes to new experiences. I have a list of wishlist in my own, journal, and even book collecting pieces of item I took in different trip or experience (similar to junk books). And I love photography or just taking pictures to put it in my archives. As life passes by with all its busy schedule, I can always find time to enjoy life, achieving wishlist and collecting memory on the way.</p>
+<p>Thinking about how each memory is stored in my head is similar to how file organizer works — this collection website was created. While each wishlist is stored like in folders, each wishlist is still a floating scattered memory in their own page. I was inspired by how our brain is capable of organizing but also fluid imagination at the same time. It's also capable to attach different context to each memory, and I portray it with filters to categorize different priorities to each wishlist.</p>
+<h2>👤 Author</h2>
+<p>Created by Feliciatiffany as a personal project to track wishes and collect memories.</p>
+<h2>🚀 Usage</h2>
+<p>The site runs as a static website. To view:</p>
+<ol>
+<li>Install dependencies: <code>npm install</code></li>
+<li>Run development server: <code>npm start</code></li>
+<li>Build for production: <code>npm run build</code></li>
+</ol>
+<p>Or deploy to GitHub Pages or any static hosting service.</p>
+<h2>⬇️ Installation</h2>
+<p>Built with <a href="https://www.11ty.dev/">Eleventy</a> (11ty) — a static site generator.</p>
+<p>Requirements:</p>
+<ul>
+<li>Node.js</li>
+<li>npm</li>
+</ul>
+<pre><code class="language-bash">npm install
+npm start
+</code></pre>
+<h2>🎨 Design Decisions</h2>
+<h3>Overall Design</h3>
+<p>The design is based on inspiration from GUI or graphical user interface — think folders, file explorers, and the familiar layout of operating systems. Each wishlist is stored like a folder, but the memories float freely on their own pages, reflecting how the brain can organize while also maintaining fluid imagination.</p>
+<h3>Home Page</h3>
+<ul>
+<li>Simple and minimal, showing a sneak peek of the theme</li>
+<li>Introduces the folder-based concept</li>
+</ul>
+<h3>Wishlist Page</h3>
+<ul>
+<li>User interface of Finder: file organizing aesthetic</li>
+<li>Each collection displayed as files/folders</li>
+<li><strong>Challenge</strong>: Displaying each collection while excluding index, wishlist.html, etc.</li>
+<li><strong>Filter System</strong>: The most challenging part — learning how to implement filtering where clicking a button filters items based on priority. Used tags to categorize (high, medium, low priority).</li>
+</ul>
+<h3>Gallery Page</h3>
+<ul>
+<li>Image grid layout as learned in class</li>
+<li>Multiple images displayed in an organized grid</li>
+</ul>
+<h3>Collection Pages</h3>
+<ul>
+<li>Visualizes how the brain is capable of organizing but also fluid at the same time</li>
+<li>Full of scattered memories — each wishlist has its own space but connects to the larger system</li>
+</ul>
+<h2>🔧 How the Code Works</h2>
+<h3>For Non-Technical Understanding:</h3>
+<ol>
+<li>
+<p><strong>Data Structure (images.json)</strong>: The site uses a data file to store all wishlist items. Each item has details like title, image, priority level, and other metadata.</p>
+</li>
+<li>
+<p><strong>Templates (Eleventy)</strong>: The site uses templates to generate different pages from the same design. This makes it easy to add new wishes without writing new HTML for each one.</p>
+</li>
+<li>
+<p><strong>Filters</strong>: The priority filters (high, medium, low) work by checking each item's priority tag and only showing items that match the selected filter.</p>
+</li>
+<li>
+<p><strong>Layouts</strong>: The design uses a consistent folder-inspired layout that changes slightly depending on which page you're viewing.</p>
+</li>
+</ol>
+<h3>For Technical Team:</h3>
+<ul>
+<li><strong>11ty</strong>: Static site generator for efficient, fast-loading pages</li>
+<li><strong>Nunjucks templates</strong>: Used for reusable components and layouts</li>
+<li><strong>JSON data</strong>: Centralized data management for wishlist items</li>
+<li><strong>CSS variables</strong>: For consistent theming across pages</li>
+<li><strong>Filter logic</strong>: Implemented using 11ty collection filters and conditional rendering</li>
+</ul>
+<h2>📁 Project Structure</h2>
+<pre><code>├── _data/
+│   └── images.json         # Wishlist data
+├── _includes/              # Template components
+├── aurora.md               # Wishlist item
+├── canada.md               # Wishlist item
+├── galleries.md            # Gallery page data
+├── index.md                # Home page
+├── master.md               # Master wishlist
+├── nagoya.md               # Wishlist item
+├── nintendo.md            # Wishlist item
+├── papua.md                # Wishlist item
+├── priorityhigh.md         # High priority filter
+├── prioritylow.md         # Low priority filter
+├── prioritymedium.md      # Medium priority filter
+├── snowboard.md           # Wishlist item
+├── wishlist.md             # Main wishlist page
+├── styles/                 # CSS files
+├── scripts/                # JavaScript files
+└── images/                 # Image assets
+</code></pre>
+<h2>💬 Feedback</h2>
+<p>For questions or suggestions, please open an issue on the project repository.</p>
