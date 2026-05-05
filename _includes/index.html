@@ -4,17 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>WishList</title>
-  <link rel="stylesheet" href="{{ pathPrefix }}styles/home.css" />
+  <link rel="stylesheet" href="{{ '/styles/home.css' | url }}" />
 </head>
 <body>
   <main class="container">
 
     <div class="folderGrid">
-      <img src="{{ pathPrefix }}images/bluefolder.png" alt="folder Picture Icon">
+      <img src="{{ '/images/bluefolder.png' | url }}" alt="folder Picture Icon">
       <span class="title">Wishlist</span>
     </div>
     <div class="folderGrid">
-      <img src="{{ pathPrefix }}images/bluefolder.png" alt="folder Picture Icon">
+      <img src="{{ '/images/bluefolder.png' | url }}" alt="folder Picture Icon">
       <a href="https://fany.me" class="title">Portfolio </a>
     </div>
   
@@ -34,5 +34,5 @@
   </main>
 
 </body>
-<script src="{{ pathPrefix }}scripts/randomizer.js" defer></script>
+<script src="{{ '/scripts/randomizer.js' | url }}" defer></script>
 </html>

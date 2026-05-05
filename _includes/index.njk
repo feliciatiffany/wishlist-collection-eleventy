@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>WishList</title>
-  <link rel="stylesheet" href="{{ pathPrefix }}styles/style.css" />
+  <link rel="stylesheet" href="{{ '/styles/style.css' | url }}" />
 </head>
 <body>
   <main class="container">
@@ -12,7 +12,7 @@
     <div class="folderGrid">
         {% for item in links %}
             <a class="folder" href="{{ item.href }}">
-                <img src="{{ pathPrefix }}images/bluefolder.png" alt="Folder icon">
+                <img src="{{ '/images/bluefolder.png' | url }}" alt="Folder icon">
                 <span class="title">{{ item.title }}</span>
             </a>
         {% endfor %}
@@ -22,5 +22,5 @@
   </main>
 
 </body>
-<script src="{{ pathPrefix }}scripts/randomizer.js" defer></script>
+<script src="{{ '/scripts/randomizer.js' | url }}" defer></script>
 </html>

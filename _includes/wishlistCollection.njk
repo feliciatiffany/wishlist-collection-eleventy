@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>WishList</title>
-  <link rel="stylesheet" href="{{ pathPrefix }}styles/collectionStyle.css" />
+  <link rel="stylesheet" href="{{ '/styles/collectionStyle.css' | url }}" />
 </head>
 <body>
   <div class="wishBody">
@@ -21,7 +21,7 @@
     <section class="floatStage" >
         {% for wishImage in img%}
           <div class="floatItem"> 
-           <img src="{{ pathPrefix }}images/{{ wishImage }}">
+           <img src="{{ ('/images/' ~ wishImage) | url }}">
           </div>
         {% endfor %}
         <div class="floatItem" id="title"> {{ title }} </div>
@@ -33,5 +33,5 @@
 
   </div>
 </body>
-<script src="{{ pathPrefix }}scripts/randomizer.js" defer></script>
+<script src="{{ '/scripts/randomizer.js' | url }}" defer></script>
 </html>
