@@ -61,7 +61,8 @@
       <div class="section-label">Folders
       <div class="sidebarFolders" >
         {% for wish in collections.all %}
-          <a class="item" href="{{ wish.data.permalink }}" role="listitem">
+          {% if wish.data.title %}
+          <a class="item" href="{{ wish.url }}" role="listitem">
             <!-- Look-alike Folder icon -->
             <svg class="icon folder" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -69,6 +70,7 @@
             </svg>
             <span>{{ wish.data.title }}</span>
           </a>
+          {% endif %}
         {% endfor %}
       
       
